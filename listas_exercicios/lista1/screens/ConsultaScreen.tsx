@@ -4,7 +4,7 @@ import { useCep } from "../hooks/useCep";
 
 export default function ConsultaScreen() {
   const [cep, setCep] = useState("");
-  const { resultado, consultarCep } = useCep();
+  const { resultado, erro, consultarCep } = useCep();
 
   return (
     <View style={styles.container}>
@@ -16,6 +16,7 @@ export default function ConsultaScreen() {
         onChangeText={setCep}
       />
       <Button title="Obter" onPress={() => consultarCep(cep)} />
+      {erro && <Text style={styles.error}>CEP inválido</Text>}
       {resultado ? (
         <View style={styles.result}>
           <Text>CEP: {resultado.cep}</Text>

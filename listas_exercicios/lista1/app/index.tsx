@@ -23,7 +23,7 @@ export default function App() {
   return (
     <CepProvider>
       <Drawer.Navigator
-        initialRouteName="Um"
+        initialRouteName="Consulta"
         screenOptions={({ route }) => ({
           headerShown: true,
           drawerActiveTintColor: "#007AFF",

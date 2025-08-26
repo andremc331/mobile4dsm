@@ -7,15 +7,19 @@ export default function HistoricoScreen() {
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      {historico.map((item, index) => (
-        <View key={index} style={styles.card}>
-          <Text>CEP: {item.cep}</Text>
-          <Text>Rua: {item.logradouro}</Text>
-          <Text>Bairro: {item.bairro}</Text>
-          <Text>Cidade: {item.localidade}</Text>
-          <Text>UF: {item.uf}</Text>
-        </View>
-      ))}
+      {historico.length === 0 ? (
+        <Text style={styles.empty}>Nenhuma consulta válida ainda.</Text>
+      ) : (
+        historico.map((item, index) => (
+          <View key={index} style={styles.card}>
+            <Text>CEP: {item.cep}</Text>
+            <Text>Rua: {item.logradouro}</Text>
+            <Text>Bairro: {item.bairro}</Text>
+            <Text>Cidade: {item.localidade}</Text>
+            <Text>UF: {item.uf}</Text>
+          </View>
+        ))
+      )}
     </ScrollView>
   );
 }
@@ -27,5 +31,11 @@ const styles = StyleSheet.create({
     padding: 10,
     borderWidth: 1,
     borderRadius: 5,
+  },
+  empty: {
+    textAlign: "center",
+    marginTop: 50,
+    fontSize: 16,
+    color: "#555",
   },
 });

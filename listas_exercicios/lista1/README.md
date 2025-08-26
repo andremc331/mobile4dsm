@@ -1,3 +1,6 @@
+*Lista 1 e 2 de Exercícios, com telas 10 telas da Lista I e 2 telas da Lista II, conforme solicitado, inclusive com a esclusão da tela 11.*
+
+
 # Welcome to your Expo app 👋
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).

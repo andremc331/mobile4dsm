@@ -5,7 +5,6 @@ export default function Home() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Tela Inicial (Home)</Text>
-      <Text style={styles.text}>Troque o import no App.tsx para testar os exercícios</Text>
     </View>
   );
 }

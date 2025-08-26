@@ -40,7 +40,7 @@ export default function Nove() {
         />
         <Picker
           selectedValue={role}
-          onValueChange={(itemValue) => setRole(itemValue)}
+          onValueChange={(itemValue: string) => setRole(itemValue)}
           style={styles.input}
         >
           <Picker.Item label="Administrador" value="admin" />

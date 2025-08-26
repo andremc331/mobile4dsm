@@ -1,6 +1,6 @@
 import React from "react";
 import { View, StyleSheet, Image, TouchableOpacity, Text } from "react-native";
-import logo from "../../assets/adaptive-icon.png";
+import logo from "../assets/images/adaptive-icon.png";
 
 export default function Onze() {
   return (

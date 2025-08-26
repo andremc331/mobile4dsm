@@ -1,7 +1,7 @@
 import React from "react";
 import { View, StyleSheet, Image, TouchableOpacity, Alert } from "react-native";
 import Constants from "expo-constants";
-import logo from "../../assets/adaptive-icon.png";
+import logo from "../assets/images/adaptive-icon.png";
 
 export default function Cinco() {
   const handlePress = () => {

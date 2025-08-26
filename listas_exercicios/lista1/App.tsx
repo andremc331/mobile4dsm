@@ -1,16 +1,8 @@
-import React from "react";
-import { StatusBar } from "expo-status-bar";
-import Home from "./screens/Home";
-// import Um from "./screens/Um";
-// import Dois from "./screens/Dois";
-// import Tres from "./screens/Tres";
-// import Quatro from "./screens/Quatro";
+// import React from 'react';
+// import Navigation from './app/Navigation';
 
-export default function App() {
-  return (
-    <>
-      <StatusBar hidden /> 
-      <Home />
-    </>
-  );
-}
+// export default function App() {
+//   return (
+//     <Navigation />
+//   );
+// }
